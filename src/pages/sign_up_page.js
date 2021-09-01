@@ -5,7 +5,7 @@ import SocialIcons from '../components/social_icons';
 import UserEmailPassword from '../components/user_email_password';
 import ConfirmEmail from '../components/confirm_email';
 import { useDispatch, useSelector } from 'react-redux';
-import { changeField, resetState, signUpThunk, validate } from '../store/userSlice';
+import { changeField, resetState } from '../store/userSlice';
 import { userService } from '../api/userService';
 const SignUpPage = () => {
     const authState = useSelector((state) => state.userAuth)

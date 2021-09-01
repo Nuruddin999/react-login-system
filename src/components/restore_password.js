@@ -1,10 +1,9 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import "../styles/App.css"
 import { ReactComponent as Lock } from "../img/lock.svg"
 import { ReactComponent as SuccessMessage } from "../img/restored.svg"
-import Title from './title'
 import { useDispatch, useSelector } from 'react-redux'
-import { changeField, resetState } from '../store/userSlice'
+import { changeField } from '../store/userSlice'
 import { userService } from '../api/userService';
 import { Link } from 'react-router-dom'
 const RestorePassword = () => {
@@ -16,9 +15,6 @@ const RestorePassword = () => {
     const sendRestore = () => {
         dispatch(userService.userRestorePassword({ email }))
     }
-    // useEffect(() => {
-    //     dispatch(resetState())
-    // }, [])
     return (
         <div className={"restore-password"}>
             <div className={"restore-password-lock"}>

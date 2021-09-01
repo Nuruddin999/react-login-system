@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import MainPage from './pages/main_page';
-import { BrowserRouter, HashRouter } from "react-router-dom";
+import { BrowserRouter} from "react-router-dom";
 import { store } from './store/store'
 import { Provider } from 'react-redux'
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <MainPage />
     </BrowserRouter>
   </Provider>

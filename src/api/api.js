@@ -1,4 +1,4 @@
-import { validate } from "../store/userSlice"
+
 
 export const signUp = (username, email) => new Promise((resolve, reject) => {
     resolve({ username, email })

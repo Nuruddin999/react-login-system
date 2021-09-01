@@ -1,6 +1,5 @@
 import { userService } from '../api/userService';
-import { validateEmail } from '../utils/email_validate';
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
+import {  createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
     username: "",

@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Title from './title'
 import "../styles/App.css"
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
-import { userService } from '../api/userService';
-import { changeField, resetState } from '../store/userSlice'
+import { changeField } from '../store/userSlice'
 const ConfirmEmail = () => {
 
 
@@ -13,9 +12,6 @@ const ConfirmEmail = () => {
     const handleChange = (value, field) => {
         dispatch(changeField({ value, field }))
     }
-    // useEffect(() => {
-    //     dispatch(resetState())
-    // }, [])
     return (
         <>
             <Title title={isSent ? "Подтвердите ваш e-mail" : "Мне не пришло письмо"} descr={isSent ? `${username}, на ваш E-mail отправлено письмо со ссылкой для подтверждения. Перейдите по ней, чтобы активировать вашу учетную запись и получить 7 дней бесплатного доступа. ` : "notreceive"} />
