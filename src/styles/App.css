@@ -1,0 +1,446 @@
+:root {
+  --blue: #4E74F5;
+  --grey: #999999;
+}
+
+
+.main-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav_buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.nav_buttons span {
+  margin-right: 24px;
+}
+
+.nav_buttons_button,
+.restore_button,
+.signup_page_form button {
+  background: var(--blue);
+  color: white;
+  padding: 1em 3em;
+  border-radius: 100px;
+  border: unset;
+  cursor: pointer;
+}
+
+.nav_buttons_logo {
+  margin-left: 54px;
+  display: flex;
+}
+
+.nav_buttons_logo svg {
+  margin: auto;
+}
+
+.nav_buttons_signin {
+  margin-right: 54px;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  width: 30%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.signup_page {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-comp h1,
+h4 {
+  text-align: center;
+
+}
+
+.title-comp h1 {
+  font-weight: 600;
+}
+
+.title-comp h4 {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey);
+}
+
+.social_icons_comp {
+  display: flex;
+}
+
+.social_icons_facebook {
+  display: flex;
+}
+
+.social_icons_facebook,
+.signup_page_email,
+.signup_page_name,
+.signup_page_password,
+.restore-password input,
+.notresent {
+  border: 1px solid #E6E6E6;
+  border-radius: 12px;
+  padding: 17px 0;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.signup_page_form input {
+  display: inline-block;
+}
+
+.signup_page_form,
+.notresent {
+  margin: 20px 0;
+}
+
+.social_icons_facebook {
+  font-size: 12px;
+}
+
+.social_icons_facebook:first-child {
+  margin-right: 8px;
+}
+
+.social_icons_facebook:last-child {
+  margin-left: 8px;
+}
+
+.social_icons_facebook span {
+  margin: auto 13px;
+  font-weight: 600;
+}
+
+.social_icons_svg_ic {
+  display: flex;
+  margin-left: 15px;
+}
+
+.social_icons_svg_ic svg {
+  margin: auto;
+}
+
+.signup_page_or {
+  text-align: center;
+  margin: 12px 0;
+}
+
+.signup_page_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.social_icons_facebook,
+.signup_page_email,
+.signup_page_password,
+.signup_page_name {
+  padding-left: 13px;
+  margin: 6px 0;
+}
+
+.restore-password input,
+.notresent {
+  padding-left: 13px;
+  margin: 16px 0;
+}
+
+.signup_page_password {
+  margin-bottom: 20px;
+}
+
+.signup_page_form_promocode {
+  text-align: center;
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.signup_page_form button,
+.restore_button {
+  font-size: 16px;
+  line-height: 13px;
+  font-weight: 700;
+
+}
+
+.signup_page_form_agree {
+  margin: 24px auto 0;
+}
+
+.signup_page_form_agree span {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  color: black;
+}
+
+.signup_page_password {
+  margin-bottom: 20px;
+}
+
+.signup_page_form_cancel,
+.nav_buttons span {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--grey);
+}
+
+.signup_page_form_cancel,
+.signup_page_form_promocode,
+.notresent {
+  cursor: pointer;
+}
+
+.signup_page_form_cancel {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signup_page_form_agree span:last-child {
+  color: var(--blue);
+  margin-left: 5px;
+}
+
+.signup_page_resend {
+  margin: 20px auto 0;
+  width: 100%;
+}
+
+.signup_page_resend input {
+  margin: 0 auto 0;
+  width: 90%;
+}
+
+
+.title-comp-support {
+  color: var(--blue);
+}
+
+.error-text {
+  text-align: center;
+  color: red;
+  font-size: 10px;
+}
+
+.error-input {
+  border: 1px solid red;
+  border-radius: 12px;
+  padding: 17px 0;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding-left: 13px;
+  margin: 6px 0;
+  outline-offset: 0;
+}
+
+.restore-password {
+  display: flex;
+  flex-direction: column;
+}
+
+.restore-password h2,
+.restore-password span {
+  text-align: center;
+}
+
+.restore-password input {
+  width: 100%;
+}
+
+.restore-password h2 {
+  margin-bottom: 0;
+}
+
+.restore-password-text {
+  display: block;
+  margin: 0 auto 0;
+  color: var(--grey);
+}
+
+.restore-password-text,
+.loader-span {
+  font-size: 16px;
+}
+
+.restore-password-text:last-child {
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.restore-password-lock {
+  margin: 0 auto 0;
+  display: table;
+}
+
+.restore_button {
+  margin-top: 15px;
+}
+
+
+.restore-password-gohome {
+  margin: auto;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  top: calc(50% - 13px);
+  left: calc(50% - 13px);
+  width: 20px;
+  height: 20px;
+  margin: 4px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+.restore-password .loader-span {
+  margin: 0;
+  text-align: center;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@media screen and (max-width: 760px) {
+  .content {
+    width: 90%;
+  }
+
+  .nav_buttons {
+    padding: 0;
+    margin-top: 16px;
+  }
+
+  .nav_buttons_signin span {
+    display: none;
+  }
+
+  .nav_buttons_logo {
+    margin-left: 16px;
+  }
+
+  .nav_buttons_signin {
+    margin-right: 16px;
+  }
+
+  .title-comp {
+    margin-top: 40px;
+  }
+
+  .title-comp h1 {
+    margin-bottom: 0px;
+  }
+
+  .title-comp h4 {
+    margin-top: 0;
+  }
+
+  .social_icons_comp {
+    flex-direction: column;
+  }
+
+  .social_icons_facebook:first-child {
+    margin-right: 0;
+  }
+
+  .social_icons_facebook:last-child {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+
+
+  .social_icons_facebook span {
+    margin: 0 auto;
+  }
+
+
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
